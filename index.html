@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUCA - Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(to right, #ff6600, #ff3333); /* Orange to Red Gradient */
+            color: #fff;
+            font-size: 3em;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 4em;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        /* Scrollable Images Section */
+        .image-gallery {
+            display: flex;
+            overflow: hidden;
+            margin: 50px 0;
+        }
+
+        .image-gallery img {
+            width: 300px;
+            margin: 0 10px;
+            border-radius: 10px;
+            animation: scrollImages 20s linear infinite;
+        }
+
+        @keyframes scrollImages {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* About Me Section */
+        .about-me {
+            text-align: center;
+            padding: 40px;
+            background: #fff;
+            color: #444;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .about-me h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ff6600; /* Yellow Orange */
+        }
+
+        .about-me p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            padding: 40px;
+            background: #ff3333; /* Red */
+            color: #fff;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.2em;
+            margin: 10px;
+            padding: 10px 20px;
+            background: #ff6600;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .contact a:hover {
+            background: #ff3300; /* Darker orange */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .image-gallery img {
+                width: 200px;
+            }
+
+            header h1 {
+                font-size: 3em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .about-me h2 {
+                font-size: 2em;
+            }
+
+            .contact h2 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>LUCA</h1>
+        <p>Welcome to my personal portfolio</p>
+    </header>
+
+    <section class="image-gallery">
+        <!-- Replace image names below with the actual names of your images in the "images" folder -->
+        <img src="images/image1.jpg" alt="Gallery Image 1">
+        <img src="images/image2.jpg" alt="Gallery Image 2">
+        <img src="images/image3.jpg" alt="Gallery Image 3">
+        <img src="images/image4.jpg" alt="Gallery Image 4">
+        <img src="images/image5.jpg" alt="Gallery Image 5">
+    </section>
+
+    <section class="about-me">
+        <h2>About Me</h2>
+        <p>
+            Hello, I'm LUCA! I'm a passionate web developer with a keen eye for design and functionality. I specialize in creating beautiful, responsive, and user-friendly websites. I love experimenting with new technologies and continuously improving my skills.
+            <br><br>
+            <!-- You can edit your personal details below -->
+            Feel free to explore my projects and get in touch if you'd like to collaborate on something exciting.
+        </p>
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <a href="mailto:luca@example.com">Email Me</a>
+        <a href="https://www.linkedin.com/in/luca" target="_blank">LinkedIn</a>
+        <a href="https://github.com/luca" target="_blank">GitHub</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 LUCA. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
